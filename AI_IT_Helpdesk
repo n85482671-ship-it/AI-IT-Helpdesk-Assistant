@@ -1,0 +1,25 @@
+from flask import Flask, request, jsonify, render_template_string
+import platform
+import shutil
+import socket
+import subprocess
+import re
+from datetime import datetime
+
+app = Flask(_name_)
+
+# ==========================================================
+# KNOWLEDGE BASE
+# RAG SOURCE
+# ==========================================================
+
+KNOWLEDGE_BASE = [
+
+    {
+        "title": "Wi-Fi Connection",
+        "keywords": [
+            "wifi", "wi-fi", "wireless",
+            "network", "internet",
+            "connection", "connect"
+        ],
+        "answer": """
